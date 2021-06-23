@@ -4,8 +4,6 @@ const blogRoutes = require("./routes/blogRoutes");
 const port = 3000;
 require('dotenv').config();
 
-console.log(process.env);
-
 //express app
 const app = express();
 

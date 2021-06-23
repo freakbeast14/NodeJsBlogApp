@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
     body{
-      /* max-width: 1200px; */
       margin: 0;
-      /* padding: 0 20px; */
       font-family: 'Noto Serif', serif;
     }
     p, h1, h2, h3, a, ul{
@@ -60,9 +58,10 @@
     }
     .content{
       margin-left: 20px;
+      margin-right: 20px;
     }
     .content p{
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     /* index styles */
@@ -143,4 +142,35 @@
     .navbar{
       border-radius: 0px !important;
       border: 0px !important;
+    }
+    #addBtn{
+      padding: 10px 20px;
+      font-size: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      background-color: crimson;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px #999;
+      margin-left: 40%;
+    }
+    #addBtn:hover{
+      background-color: red;
+    }
+    #addBtn:active {
+      background-color: #3e8e41;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+    .not-found{
+      font-size: 3rem;
+      text-align: center;
+    }
+    @media screen and (min-width: 768px){
+      .content{
+        margin-left: 150px;
+        margin-right: 150px;
+      }
     }
