@@ -1,11 +1,27 @@
-<nav>
-    <div class="site-title">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header" id="navHeader">
+      <button
+        type="button"
+        class="navbar-toggle"
+        data-toggle="collapse"
+        data-target="#myNavbar"
+        id="navButton"
+      >
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="site-title">
         <a href="/"><h1>Movie Blogs</h1></a>
-        <p>Movie Review Site</p>
+      </div>
     </div>
-    <ul>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
         <li><a href="/">Blogs</a></li>
         <li><a href="/about">About</a></li>
         <li><a href="/blogs/create">New blog</a></li>
-    </ul>
+      </ul>
+    </div>
+  </div>
 </nav>
