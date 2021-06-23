@@ -2,13 +2,15 @@ const express = require("express");
 const mongoose = require("mongoose");
 const blogRoutes = require("./routes/blogRoutes");
 const port = 3000;
+require('dotenv').config();
+
+console.log(process.env);
 
 //express app
 const app = express();
 
 //connect to mongodb
-const dbURI =
-  "mongodb+srv://freakbeast:abcd1234@nodejscluster.tzvoz.mongodb.net/nodejsdb?retryWrites=true&w=majority";
+const dbURI = process.env.MONGODB_URL;
 mongoose
   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then((result) => app.listen(port))
